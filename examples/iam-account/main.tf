@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "eu-west-1"
+  region = "us-east-1"
 }
 
 ##############
@@ -8,7 +8,7 @@ provider "aws" {
 module "iam_account" {
   source = "../../modules/iam-account"
 
-  account_alias = "new-test-account-awesome-company"
+  account_alias = "new-test-account-awesome-company-draftkings"
 
   minimum_password_length = 6
   require_numbers         = false
